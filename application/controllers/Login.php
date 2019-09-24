@@ -6,13 +6,7 @@ class Login extends CI_Controller {
     function __construct()
 	{
         parent::__construct();
-        // $this->load->library('google');
-        // $this->load->library('linelogin_lib', array(
-        //     'client_id' => '1647379540', 
-        //     'client_secret' => '0352f1c1651471857f9447b17591cac6',
-        //     'callback_url' => base_url() . 'login/line_callback'
-        // ));
-
+    
         $this->load->library('GoogleOld_lib', null, 'google');
     	$this->_init();
 	}
